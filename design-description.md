@@ -1,5 +1,17 @@
-
+--------------------
+Requirement:
+--------------------
 When the app is started, the user is presented with the main menu, which allows the user to (1) enter current job details, (2) enter job offers, (3) adjust the comparison settings, or (4) compare job offers (disabled if no job offers were entered yet).  
+
+
+--------------------
+Design:
+--------------------
+
+
+--------------------
+Requirement:
+--------------------
 When choosing to enter current job details, a user will:
 Be shown a user interface to enter (if it is the first time) or edit all of the details of their current job, which consist of:
 Title
@@ -12,6 +24,16 @@ Yearly bonus
 Retirement benefits (as percentage matched)
 Leave time (vacation days and holiday and/or sick leave, as a single overall number of days)
 Be able to either save the job details or cancel and exit without saving, returning in both cases to the main menu.
+
+--------------------
+Design:
+--------------------
+
+
+--------------------
+Requirement:
+--------------------
+
 When choosing to enter job offers, a user will:
 Be shown a user interface to enter all of the details of the offer, which are the same ones listed above for the current job.
 Be able to either save the job offer details or cancel.
@@ -23,6 +45,15 @@ Yearly bonus
 Retirement benefits
 Leave time
 If no weights are assigned, all factors are considered equal.
+
+--------------------
+Design:
+--------------------
+
+
+--------------------
+Requirement:
+--------------------
 When choosing to compare job offers, a user will:
 Be shown a list of job offers, displayed as Title and Company, ranked from best to worst (see below for details), and including the current job (if present), clearly indicated.
 Select two jobs to compare and trigger the comparison.
@@ -36,6 +67,15 @@ Yearly bonus adjusted for cost of living
 Retirement benefits (as percentage matched)
 Leave time
 Be offered to perform another comparison or go back to the main menu.
+
+--------------------
+Design:
+--------------------
+
+
+--------------------
+Requirement:
+--------------------
 When ranking jobs, a job’s score is computed as the weighted sum of:
 
 AYS + AYB + (RBP * AYS) + (LT * AYS / 260) - (CT * AYS / 8)
@@ -55,6 +95,23 @@ therefore commute-time cost = CT * 260 * (AYS / 260) / 8 = CT * AYS / 8
 For example, if the weights are 2 for the yearly salary, 2 for the retirement benefits, and 1 for all other factors, the score would be computed as:
 2/7 * AYS + 1/7 * AYB + 2/7 * (RBP * AYS) + 1/7 * (LT * AYS / 260) - 1/7 (CT * AYS / 8)
 
+--------------------
+Design:
+--------------------
+
+
+--------------------
+Requirement:
+--------------------
 The user interface must be intuitive and responsive.
 The performance of the app should be such that users do not experience any considerable lag between their actions and the response of the app.
 For simplicity, you may assume there is a single system running the app (no communication or saving between devices is necessary).
+
+--------------------
+Design:
+--------------------
+
+
+--------------------
+Requirement:
+--------------------
