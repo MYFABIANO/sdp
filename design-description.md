@@ -13,7 +13,7 @@ When the app is started, the user is presented with the main menu, which allows 
 --------------------
 Design:
 --------------------
-
+Please also note that we are expecting to see, in your design, a class that represents the entry point to the system, and that ties the various pieces together.
 
 --------------------
 Requirement:
