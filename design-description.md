@@ -104,20 +104,28 @@ For example, if the weights are 2 for the yearly salary, 2 for the retirement be
 --------------------
 Design:
 --------------------
+This is not represented in my design, as it will be handled entirely within the database implementation.
 
 
 --------------------
 Requirement:
 --------------------
 The user interface must be intuitive and responsive.
-The performance of the app should be such that users do not experience any considerable lag between their actions and the response of the app.
-For simplicity, you may assume there is a single system running the app (no communication or saving between devices is necessary).
 
 --------------------
 Design:
 --------------------
+This is not represented in my design, as it will be handled entirely within the GUI implementation.
 
 
 --------------------
 Requirement:
 --------------------
+The performance of the app should be such that users do not experience any considerable lag between their actions and the response of the app.
+
+--------------------
+Design:
+--------------------
+This is not represented in my design, as it will be handled entirely within the app infrastructure and database implementation.
+
+
