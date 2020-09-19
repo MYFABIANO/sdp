@@ -1,4 +1,10 @@
 --------------------
+Assignment 5: Software Design - UML Design Description Document
+--------------------
+Mingfeng Qian 
+mqian30@gatech.edu
+
+--------------------
 Requirement:
 --------------------
 When the app is started, the user is presented with the main menu, which allows the user to (1) enter current job details, (2) enter job offers, (3) adjust the comparison settings, or (4) compare job offers (disabled if no job offers were entered yet).  
