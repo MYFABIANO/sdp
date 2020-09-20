@@ -13,7 +13,7 @@ When the app is started, the user is presented with the main menu, which allows 
 --------------------
 Design:
 --------------------
-Please also note that we are expecting to see, in your design, a class that represents the entry point to the system, and that ties the various pieces together.
+The MainMenu class represents the entry point to the system, and that ties the various pieces together. The class has four operations that allows users to access to the four screens abovementioned.
 
 --------------------
 Requirement:
@@ -34,16 +34,27 @@ Be able to either save the job details or cancel and exit without saving, return
 --------------------
 Design:
 --------------------
-
+This is realize in the JobInfo class. The list of items is attributes of the class. Users can input their own job information in these attributes. The save, cancel, exit and return to main menus are operations of the class, by using which users can decide how to treat their input.
 
 --------------------
 Requirement:
 --------------------
-
 When choosing to enter job offers, a user will:
 Be shown a user interface to enter all of the details of the offer, which are the same ones listed above for the current job.
 Be able to either save the job offer details or cancel.
 Be able to (1) enter another offer, (2) return to the main menu, or (3) compare the offer with the current job details (if present).
+
+--------------------
+Design:
+--------------------
+This is realized in the EnterJobOffers class. The class inherits the JobInfo class. In addition, it allows users to accomplish the required actions by using additional operations such as :
+enterAnotherJob(): enter another offer
+returnToMain(): return to the main menu
+compareJob(): compare the offer with the current job details (if present). . 
+
+--------------------
+Requirement:
+--------------------
 When adjusting the comparison settings, the user can assign integer weights to:
 Commute time
 Yearly salary
@@ -55,7 +66,7 @@ If no weights are assigned, all factors are considered equal.
 --------------------
 Design:
 --------------------
-
+This is realized in the class ComparisonSetting. The weights are stored in the attributes.
 
 --------------------
 Requirement:
@@ -77,7 +88,10 @@ Be offered to perform another comparison or go back to the main menu.
 --------------------
 Design:
 --------------------
-
+This is realized in the CompareJobOffer class. 
+The class will be extracting all job information stored in the back-end database and display title and company in the frontend.
+User can select two job offers by using the operations selectTwoJobs(), return to main menu by using returnToMain(), and create another comparison by using anotherComparison(). 
+Once the user selects two jobs, the user will be displayed a table with the data for the two selected jobs as comparison.
 
 --------------------
 Requirement:
