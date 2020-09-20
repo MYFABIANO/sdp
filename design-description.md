@@ -48,9 +48,9 @@ Be able to (1) enter another offer, (2) return to the main menu, or (3) compare 
 Design:
 --------------------
 This is realized in the EnterJobOffers class. The class inherits the JobInfo class. In addition, it allows users to accomplish the required actions by using additional operations such as :
-enterAnotherJob(): enter another offer
-returnToMain(): return to the main menu
-compareJob(): compare the offer with the current job details (if present). . 
+-enterAnotherJob(): enter another offer
+-returnToMain(): return to the main menu
+-compareJob(): compare the offer with the current job details (if present). . 
 
 --------------------
 Requirement:
@@ -88,10 +88,10 @@ Be offered to perform another comparison or go back to the main menu.
 --------------------
 Design:
 --------------------
-This is realized in the CompareJobOffer class. 
-The class will be extracting all job information stored in the back-end database and display title and company in the frontend.
-User can select two job offers by using the operations selectTwoJobs(), return to main menu by using returnToMain(), and create another comparison by using anotherComparison(). 
-Once the user selects two jobs, the user will be displayed a table with the data for the two selected jobs as comparison.
+-This is realized in the CompareJobOffer class. 
+-The class will be extracting all job information stored in the back-end database and display title and company in the frontend.
+-User can select two job offers by using the operations selectTwoJobs(), return to main menu by using returnToMain(), and create another comparison by using anotherComparison(). 
+-Once the user selects two jobs, the user will be displayed a table with the data for the two selected jobs as comparison.
 
 --------------------
 Requirement:
