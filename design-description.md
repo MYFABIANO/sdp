@@ -48,9 +48,10 @@ Be able to (1) enter another offer, (2) return to the main menu, or (3) compare 
 Design:
 --------------------
 This is realized in the EnterJobOffers class. The class inherits the JobInfo class. In addition, it allows users to accomplish the required actions by using additional operations such as :
--enterAnotherJob(): enter another offer
--returnToMain(): return to the main menu
--compareJob(): compare the offer with the current job details (if present). . 
+
+<br/>enterAnotherJob(): enter another offer
+<br/>returnToMain(): return to the main menu
+<br/>compareJob(): compare the offer with the current job details (if present). . 
 
 --------------------
 Requirement:
